@@ -18,7 +18,7 @@ class ReactiveRestServerApplicationTests {
         String clientPassword = "clientPassword";
 
         webTestClient.post()
-                .uri("/v1/auth")
+                .uri("/v1/auth/token")
                 .header("X-Client-Id", clientId)
                 .header("X-Client-Password", clientPassword)
                 .contentType(MediaType.APPLICATION_JSON)
